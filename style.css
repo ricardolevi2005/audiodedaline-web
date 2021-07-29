@@ -173,6 +173,10 @@ header label {
   transition: .2s linear;
 }
 
+.detalhes .container .caixa img {
+    height: 25rem;
+}
+
 .detalhes .container .caixa h3 {
     font-size: 2rem;
     color: #333;
@@ -185,6 +189,47 @@ header label {
     padding: 1rem 0;
 }
 
+.sobre {
+    background: url(./img/fondo_2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+
+.sobre .coluna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sobre .coluna .imagem {
+    flex: 1 1 30rem;
+}
+
+.sobre .coluna .imagem img {
+    width: 100%;
+}
+
+.sobre .coluna .conteudo {
+    flex: 1 1 30rem;
+}
+
+.sobre .coluna .conteudo h3 {
+    font-size: 3rem;
+    color:#333
+}
+
+.sobre .coluna .conteudo p  {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.sobre .coluna .conteudo .botoes a:last-child {
+    margin-left: 2rem;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -192,6 +237,14 @@ header label {
 }
 
 @media (max-width: 990px) {
+    section {
+        padding: 0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
   header label {
     visibility: visible;
     opacity: 1;
@@ -244,8 +297,22 @@ header label {
   font-size: 1.5rem;
 }
 
+.sobre {
+    background-position: right;
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 49%;
   }
+
+  .sobre .coluna .conteudo .botoes a {
+      width: 100%;
+      text-align: center;
+  }
+
+
+  .sobre .coluna .conteudo .botoes a {
+      margin: 1rem 0;
+}
 }
