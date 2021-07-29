@@ -24,7 +24,7 @@
 
 html {
   font-size: 62.4%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -164,70 +164,127 @@ header label {
 .detalhes .container .caixa {
   flex: 1 1 30rem;
   background: #fff;
-  border-radius: .5rem;
-  border: .1rem solid rgba(0,0,0,.2);
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   margin: 1.5rem;
   padding: 3rem 2rem;
   text-align: center;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 
 .detalhes .container .caixa img {
-    height: 25rem;
+  height: 25rem;
 }
 
 .detalhes .container .caixa h3 {
-    font-size: 2rem;
-    color: #333;
-    padding-top: 1rem;
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
 }
 
 .detalhes .container .caixa p {
-    font-size: 1.3rem;
-    color: #666;
-    padding: 1rem 0;
+  font-size: 1.3rem;
+  color: #666;
+  padding: 1rem 0;
 }
 
 .sobre {
-    background: url(./img/fondo_2.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 3rem;
+  background: url(./img/fondo_2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 3rem;
 }
 
 .sobre .coluna {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .sobre .coluna .imagem {
-    flex: 1 1 30rem;
+  flex: 1 1 40rem;
 }
 
 .sobre .coluna .imagem img {
-    width: 100%;
+  width: 100%;
 }
 
 .sobre .coluna .conteudo {
-    flex: 1 1 30rem;
+  flex: 1 1 40rem;
 }
 
 .sobre .coluna .conteudo h3 {
-    font-size: 3rem;
-    color:#333
+  font-size: 3rem;
+  color: #333;
 }
 
-.sobre .coluna .conteudo p  {
-    font-size: 1.5rem;
-    color: #666;
-    padding: 1rem 0;
+.sobre .coluna .conteudo p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
 }
 
 .sobre .coluna .conteudo .botoes a:last-child {
-    margin-left: 2rem;
+  margin-left: 2rem;
+}
+
+.cadastro {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: url(./img/fondo_sub.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cadastro h3 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.cadastro p {
+  color: whitesmoke;
+  font-size: 1.6rem;
+  margin: 2rem auto;
+  width: 70rem;
+}
+
+.cadastro form {
+  display: flex;
+  max-width: 70rem;
+  border: 0.2rem solid whitesmoke;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  margin: 2rem auto;
+  height: 5.5rem;
+}
+
+.cadastro form input[type="email"] {
+  padding: 0 2rem;
+  font-size: 1.7rem;
+  background: none;
+  width: 100%;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}
+.cadastro form input[type="email"]::placeholder {
+  color: whitesmoke;
+  text-transform: capitalize;
+}
+
+.cadastro form input[type="submit"] {
+  background: white;
+  width: 20rem;
+  font-size: 1.7rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.cadastro form input[type="submit"]:hover {
+    color: var(--verde-claro);
 }
 
 @media (max-width: 1200px) {
@@ -237,11 +294,11 @@ header label {
 }
 
 @media (max-width: 990px) {
-    section {
-        padding: 0 3%;
-        padding-top: 7.5rem;
-        padding-bottom: 2rem;
-    }
+  section {
+    padding: 0 3%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -298,7 +355,11 @@ header label {
 }
 
 .sobre {
-    background-position: right;
+  background-position: right;
+}
+
+.cadastro p{
+    width:auto
 }
 
 @media (max-width: 450px) {
@@ -307,12 +368,11 @@ header label {
   }
 
   .sobre .coluna .conteudo .botoes a {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
-
   .sobre .coluna .conteudo .botoes a {
-      margin: 1rem 0;
-}
+    margin: 1rem 0;
+  }
 }
