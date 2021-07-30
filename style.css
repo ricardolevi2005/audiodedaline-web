@@ -398,6 +398,77 @@ header label {
     color: red;
 }
 
+.contatos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+}
+
+.contatos .imagem {
+  flex: 1 1 40rem;
+}
+
+.contatos .imagem img {
+  width: 100%;
+  padding: 2rem;
+}
+
+.contatos form {
+  flex: 1 1 40rem;
+  padding: 3rem 2rem;
+  border: .1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  background: #fff;
+}
+
+.contatos .heading {
+  text-align: left;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
+.contatos form .inputcaixa {
+  position: relative;
+}
+
+.contatos form .inputcaixa input , .contatos form .inputcaixa textarea {
+  width: 100%;
+  background: none;
+  color: #333;
+  margin: 1.5rem 0;
+  padding: .5rem 0;
+  font-size: 1.7rem;
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+  text-transform: none;
+}
+
+.contatos form .inputcaixa textarea {
+  resize: none;
+  height: 13rem;
+}
+
+.contatos form .inputcaixa label {
+  position: absolute;
+  top: 1.7rem;
+  left: 0;
+  font-size: 1.7rem;
+  color: #666;
+  transition: 0.2s linear;
+}
+
+.contatos form .inputcaixa input:focus ~ label,
+.contatos form .inputcaixa input:valid ~ label,
+.contatos form .inputcaixa textarea:focus ~ label,
+.contatos form .inputcaixa textarea:valid ~ label {
+  top: -.5rem;
+  font-size: 1.5rem;
+  color: var(--verde-claro);
+}
+
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
