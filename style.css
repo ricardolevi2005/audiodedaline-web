@@ -166,7 +166,7 @@ header label {
   background: #fff;
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   margin: 1.5rem;
   padding: 3rem 2rem;
   text-align: center;
@@ -301,7 +301,7 @@ header label {
   text-align: center;
   position: relative;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   flex: 1 1 30rem;
   border-radius: 0.5rem;
 }
@@ -353,7 +353,7 @@ header label {
   padding: 1rem;
   background: white;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   text-align: center;
   padding-bottom: 3rem;
@@ -419,7 +419,7 @@ header label {
   flex: 1 1 40rem;
   padding: 3rem 2rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   background: #fff;
 }
