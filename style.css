@@ -24,7 +24,7 @@
 
 html {
   font-size: 62.4%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -417,7 +417,7 @@ header label {
 
 .contatos form {
   flex: 1 1 40rem;
-  padding: 3rem 2rem;
+  padding: 2rem 3rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
@@ -624,7 +624,7 @@ header label {
     text-align: center;
   }
 
-  .sobre .coluna .conteudo .botoes a {
+  .sobre .coluna .conteudo .botoes a:last-child {
     margin: 1rem 0;
   }
 }
